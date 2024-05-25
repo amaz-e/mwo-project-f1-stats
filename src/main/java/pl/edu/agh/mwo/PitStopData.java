@@ -3,6 +3,7 @@ package pl.edu.agh.mwo;
 import java.util.Date;
 
 public class PitStopData {
+
     private int session_key;
     private int meeting_key;
     private Date date;
@@ -34,6 +35,7 @@ public class PitStopData {
 
     public void setMeeting_key(int meeting_key) {
         this.meeting_key = meeting_key;
+
     }
 
     public Date getDate() {
@@ -43,6 +45,7 @@ public class PitStopData {
     public void setDate(Date date) {
         this.date = date;
     }
+
 
     public int getDriver_number() {
         return driver_number;
@@ -66,5 +69,6 @@ public class PitStopData {
 
     public void setLap_number(int lap_number) {
         this.lap_number = lap_number;
+
     }
 }
