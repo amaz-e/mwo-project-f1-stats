@@ -13,10 +13,9 @@ public class App
 
     public static void main( String[] args ) throws MalformedURLException {
 
-        CalculateStatsAndPrint.CalculatePitStopsCount(MockData.GetMockPitStopCollection());
-
+        CalculateStatsAndPrint.CalculatePitStopsCount(JSONtoObjectList());
 
         System.out.println( "Hello World!" );
-        JSONtoObjectList();
+
     }
 }

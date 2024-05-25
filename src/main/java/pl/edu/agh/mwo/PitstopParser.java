@@ -33,14 +33,14 @@ public class PitstopParser {
 
 
 
-    public static void JSONtoObjectList() throws MalformedURLException {
+    public static List<PitStopData> JSONtoObjectList() throws MalformedURLException {
         String jsonArray = stream(new URL("https://api.openf1.org/v1/pit?session_key=9515"));
         //System.out.println(jsonArray);
         Gson gson = new Gson();
         Type listType = new TypeToken<List<PitStopData>>() {}.getType();
         List<PitStopData> gsonList = gson.fromJson(jsonArray, listType);
 
-
+        return gsonList;
     }
 
 
