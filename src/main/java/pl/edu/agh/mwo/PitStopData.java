@@ -3,28 +3,39 @@ package pl.edu.agh.mwo;
 import java.util.Date;
 
 public class PitStopData {
-    private int sessionKey;
-    private int meetingKey;
+
+    private int session_key;
+    private int meeting_key;
     private Date date;
-    private int driverNumber;
-    private float pitDuration;
-    private int lapNumber;
+    private int driver_number;
+    private float pit_duration;
+    private int lap_number;
 
-
-    public int getSessionKey() {
-        return sessionKey;
+    public PitStopData(int sessionKey, int meetingKey, Date date, int driverNumber, float pitDuration, int lapNumber) {
+        this.session_key = sessionKey;
+        this.meeting_key = meetingKey;
+        this.date = date;
+        this.driver_number = driverNumber;
+        this.pit_duration = pitDuration;
+        this.lap_number = lapNumber;
     }
 
-    public void setSessionKey(int sessionKey) {
-        this.sessionKey = sessionKey;
+
+    public int getSession_key() {
+        return session_key;
     }
 
-    public int getMeetingKey() {
-        return meetingKey;
+    public void setSession_key(int session_key) {
+        this.session_key = session_key;
     }
 
-    public void setMeetingKey(int meetingKey) {
-        this.meetingKey = meetingKey;
+    public int getMeeting_key() {
+        return meeting_key;
+    }
+
+    public void setMeeting_key(int meeting_key) {
+        this.meeting_key = meeting_key;
+
     }
 
     public Date getDate() {
@@ -35,27 +46,29 @@ public class PitStopData {
         this.date = date;
     }
 
-    public int getDriverNumber() {
-        return driverNumber;
+
+    public int getDriver_number() {
+        return driver_number;
     }
 
-    public void setDriverNumber(int driverNumber) {
-        this.driverNumber = driverNumber;
+    public void setDriver_number(int driver_number) {
+        this.driver_number = driver_number;
     }
 
-    public float getPitDuration() {
-        return pitDuration;
+    public float getPit_duration() {
+        return pit_duration;
     }
 
-    public void setPitDuration(float pitDuration) {
-        this.pitDuration = pitDuration;
+    public void setPit_duration(float pit_duration) {
+        this.pit_duration = pit_duration;
     }
 
-    public int getLapNumber() {
-        return lapNumber;
+    public int getLap_number() {
+        return lap_number;
     }
 
-    public void setLapNumber(int lapNumber) {
-        this.lapNumber = lapNumber;
+    public void setLap_number(int lap_number) {
+        this.lap_number = lap_number;
+
     }
 }
