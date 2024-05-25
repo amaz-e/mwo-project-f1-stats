@@ -6,7 +6,7 @@ public class CalculateStatsAndPrint {
 
     public static void CalculatePitStopsCount(Collection<PitStopData> pitStopDataCollection){
 
-        System.out.println( "Pit Stops Count: " );
+        System.out.println( "Pit Stops Count: " + pitStopDataCollection.size() );
     }
     public static void CalculateLongestPitStopWithDriver(Collection<PitStopData> pitStopDataCollection){
 
